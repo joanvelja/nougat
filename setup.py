@@ -43,7 +43,7 @@ setup(
     py_modules=["predict", "app", "train", "test"],
     python_requires=">=3.7",
     install_requires=[
-        "transformers>=4.25.1,<=4.38.2",
+        "transformers==4.25.1",
         "timm==0.5.4",
         "orjson",
         "opencv-python-headless",
@@ -56,6 +56,8 @@ setup(
         "albumentations>=1.0.0",
         "pypdf>=3.1.0",
         "pypdfium2",
+        "pyarrow==14.0.1", 
+        "requests==2.31.0"
     ],
     extras_require={
         "api": [
